@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+        >
+    <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/ic_launch"
+            android:id="@+id/imageView"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_margin="10dp"
+            android:textSize="30dp"
+            android:text="VIRINK"
+            android:id="@+id/tvvir"
+            android:layout_toRightOf="@+id/imageView"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="популярная платформа для художников"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/tvinfovir" android:layout_below="@+id/tvvir" android:layout_toRightOf="@+id/imageView"/>
+    <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Email" android:layout_gravity="center"
+            android:layout_alignParentLeft="true"
+            android:textSize="20dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_below="@+id/tvinfovir"
+            android:id="@+id/tvmail"/>
+    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:id="@+id/etMail" android:layout_gravity="center" android:layout_alignParentLeft="false"
+            android:layout_alignParentTop="false"
+            android:layout_centerHorizontal="true" android:layout_below="@+id/tvmail" android:enabled="true"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:textSize="20dp"
+            android:layout_marginRight="10dp"
+            android:text="Пароль" android:layout_gravity="center_vertical" android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="false" android:layout_marginTop="20dp"
+            android:id="@+id/tvpass" android:layout_below="@+id/etMail"/>
+    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:inputType="textPassword"
+            android:ems="10"
+            android:id="@+id/etPass" android:layout_gravity="center"
+            android:layout_centerVertical="true" android:layout_alignParentLeft="true"
+            android:layout_below="@+id/tvpass" android:enabled="true"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:id="@+id/tvStatus" android:layout_gravity="center"
+            android:layout_alignWithParentIfMissing="false" android:layout_centerHorizontal="true"
+            android:layout_below="@+id/etPass" android:layout_marginTop="5dp"/>
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Войти"
+            android:textSize="30dp"
+            android:id="@+id/btnLogin" android:layout_gravity="center"
+            android:layout_centerHorizontal="true" android:layout_marginTop="5dp"
+            android:layout_below="@+id/tvStatus"/>
+    <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/progressBar" android:layout_gravity="center_horizontal" android:visibility="invisible"
+            android:layout_centerHorizontal="true" android:layout_below="@+id/btnLogin"/>
+</RelativeLayout>
+
