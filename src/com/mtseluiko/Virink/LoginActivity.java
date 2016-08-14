@@ -68,7 +68,6 @@ public class LoginActivity extends Activity {
                 }
                 else {
                     SharedPreferences.Editor ed = sPref.edit();
-
                     ed.putString("PHPSESSID", "");
                     ed.putString("hash", "");
                     ed.putString("mail", mail);
